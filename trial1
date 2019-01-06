@@ -1,0 +1,165 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*I can type whatever here
+and also
+do
+    multiple lines
+    */
+int main()
+{
+    //this does not affect the code
+
+    /*varible name:
+    cannot start with a number
+    cannot include spaces
+    cannot include special symbols, only numbers letters and underscores
+    must avoid language keywords*/
+
+    float pi=3.14;
+    char my_char='a';
+    double big_pi=3.1415926;
+
+    int a=23 ,b=45 ,c=18 ,d=7;
+
+    int sum;
+    sum=a+b;
+    printf("sum = %d\n",sum);
+
+    int subtraction;
+    subtraction=a-b;
+    printf("subtraction = %d\n",subtraction);
+
+    int multiplication;
+    multiplication=c*d;
+    printf("product = %d\n",multiplication);
+
+    float modulus;
+    modulus=c%d;
+    printf("division = %f\n",modulus);
+
+    //if statments
+
+    printf("\n");
+
+{
+    int age;
+    printf("Please enter the age ");//I can even type here
+    scanf("%d",&age);
+    if (age>18)  {
+        printf("The age is greater than 18\n");
+    }
+    if (age==18) {
+        printf("The age is equal to 18\n");
+    }
+     if (age<18)  {
+        printf("The age is less than 18\n");
+    }
+}
+
+    //if... else statments
+
+printf("\n");
+
+{
+    int family_size;
+    printf("Please enter the number of people in your family ");
+    scanf("%d",&family_size);
+    if (family_size>4) {
+        printf("Your family is greater than 4 people\n");
+        if (family_size<6) {
+            printf("Your family is greater than 4 people but less than 6 people\n");
+        }
+        else{
+            printf("Your family is greater than 6 people\n");
+        }
+    }
+    else if (family_size==4)
+    {
+        printf("Your family has 4 people\n");
+    }
+    else{
+        printf("Your family is less than 4 people\n");
+    }
+}
+
+printf("\n");
+
+///The ternary (conditional) operator in C
+
+{
+    int a=25,b=20;
+    int c ;
+    ///(/* logical expression*/) ? (/* if true */) : (/*if false*/);
+    c = (a > b) ? b : a ;
+    printf("ans = %d\n",c);
+}
+
+printf("\n");
+
+//switch statments
+
+{
+    int marks=95;
+
+    switch (marks)
+    {
+    case 95:
+    case 90:
+        printf("Excellent\n");
+        break;
+    case 75:
+        printf("Good\n");
+        break;
+    case 60:
+        printf("Satisfactory\n");
+        break;
+    case 40:
+        printf("Poor\n");
+        break;
+    default:
+        printf("Grade unavailable\n");
+    }
+}
+
+printf("\n");
+
+//While loop
+
+{
+    int i=0;
+
+    while (i <= 10)
+    {
+        printf("Value of i = %d\n",i);
+        //i=i+1;
+        i++;
+    }
+
+}
+
+printf("\n");
+
+//do...while loop in C
+
+{
+    int i=0;
+
+    do
+    {
+       printf("Value of i = %d\n",i);
+       i++;
+    } while (i <= 10);
+
+printf("\n");
+
+    while i<=10);
+    {
+        printf("Value of i = %d\n",i);
+        i++;
+    }
+}
+
+
+    return 0;
+}
